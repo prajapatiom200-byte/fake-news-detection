@@ -42,4 +42,42 @@ streamlit run app.py
 * streamlit
 * pandas
 * scikit-learn
+## 📂 Dataset
+
+The dataset used for training is not included in this repository due to size limitations.
+
+You can download it from the following sources:
+
+* Fake News Dataset (Kaggle): https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
+
+After downloading:
+
+1. Extract the files
+2. Place them in the project folder as:
+
+   * Fake.csv
+   * True.csv
+
+## ⚙️ Model Files
+
+Pre-trained model files (`.pkl`) are not included in this repository.
+
+To generate them:
+
+```bash
+python train.py
+```
+
+This will create:
+
+* model_logistic.pkl
+* model_nb.pkl
+* vectorizer.pkl
+
+After that, run:
+
+```bash
+streamlit run app.py
+```
+
 
