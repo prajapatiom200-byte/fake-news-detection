@@ -1,72 +1,75 @@
-﻿# 📰 ML-Based Fake News Detection using NLP
+# ML-Based Fake News Detection using NLP
 
-This project detects whether a news article is **Fake or Real** using Natural Language Processing (NLP) and Machine Learning models.
+This project is a simple machine learning application that classifies news as **Fake or Real** using basic NLP techniques.
 
-## 🚀 Features
+## About the Project
 
-* Logistic Regression & Naive Bayes models
-* TF-IDF vectorization
-* Streamlit interactive UI
-* Confidence scores for predictions
-* Works on short and long news text
+The main idea is to take a news headline or article and predict whether it is fake or real. The model is trained on a dataset of labeled news articles and uses text processing techniques to make predictions.
 
-## 🧠 Models Used
+## Features
+
+* Uses Logistic Regression and Naive Bayes models
+* TF-IDF is used for text vectorization
+* Built using Streamlit for a simple user interface
+* Shows prediction along with confidence score
+* Works with both short and long text input
+
+## Models Used
 
 * Logistic Regression
 * Multinomial Naive Bayes
 
-## 📊 How it Works
+## How it Works
 
-1. Input news text
-2. Preprocess (clean + normalize)
-3. Convert using TF-IDF
-4. Predict using ML models
-5. Compare model outputs
-6. Show final verdict
+1. User enters news text
+2. Text is cleaned and processed
+3. Converted into numerical form using TF-IDF
+4. Both models make predictions
+5. Final result is displayed
 
-## ⚠️ Important Note
+## Important Note
 
-This model is trained on a specific dataset of fake and real news.
+The model is trained on a specific dataset of fake and real news.
 
-* Results may vary for real-world or unseen news
-* Performance may differ for short, informal, or trending content
-* This project is intended for **educational and demonstration purposes only**
+* Results may not always be accurate for real-world news
+* Short or unusual text may give inconsistent results
+* This project is mainly for learning and demonstration
 
-## 🖥️ Run Locally
+## How to Run
+
+Install dependencies:
 
 pip install -r requirements.txt
+
+Run the app:
+
 streamlit run app.py
 
-## 📦 Requirements
+## Requirements
 
 * streamlit
 * pandas
 * scikit-learn
-## 📂 Dataset
 
-The dataset used for training is not included in this repository due to size limitations.
+## Dataset
 
-You can download it from the following sources:
+The dataset is not included in this repository because of its size.
 
-* Fake News Dataset (Kaggle): https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
+You can download it from Kaggle:
+https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
 
-After downloading:
+After downloading, place these files in the project folder:
 
-1. Extract the files
-2. Place them in the project folder as:
+* Fake.csv
+* True.csv
 
-   * Fake.csv
-   * True.csv
+## Model Files
 
-## ⚙️ Model Files
+The trained model files are also not included.
 
-Pre-trained model files (`.pkl`) are not included in this repository.
+To generate them, run:
 
-To generate them:
-
-```bash
 python train.py
-```
 
 This will create:
 
@@ -74,10 +77,7 @@ This will create:
 * model_nb.pkl
 * vectorizer.pkl
 
-After that, run:
+After that, you can run the app normally.
 
-```bash
-streamlit run app.py
-```
 
 
