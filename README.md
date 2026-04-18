@@ -1,4 +1,4 @@
-# ML-Based Fake News Detection using NLP
+# Detecting Fake News Using Logistic Regression and NLP
 
 This project is a simple machine learning application that classifies news as **Fake or Real** using basic NLP techniques.
 
